@@ -19,3 +19,26 @@ otu_its <-read_csv("data/working/its_otu_8000_t.csv")
 ## multiply otu_its by meta$f_b, then innerjoin to create otu_its_16s
 
 otu_its_16s <-read_csv("data/working/its_16s_t.csv")
+
+## explore univariates
+
+ggplot(meta,aes(AMMI, tot_plfa)) +
+  geom_point() +
+  geom_smooth(method = lm)
+
+ggplot(meta,aes(AMMI, f_b)) +
+  geom_point() +
+  geom_smooth(method = lm)
+
+ggplot(meta,aes(AMMI, gpos_gneg)) +
+  geom_point() +
+  geom_smooth(method = lm)
+
+ggplot(meta,aes(AMMI, lit_a_oa)) +
+  geom_point() +
+  geom_smooth(method = lm)
+
+ggplot(meta,aes(AMMI, soil_a_oa)) +
+  geom_point() +
+  geom_smooth(method = lm)
+
