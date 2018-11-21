@@ -3,6 +3,7 @@
 ## Tasks
 
 * Process all data into .csv
+* Import data into tibbles, check structure
 * Check sample numbering
 * Construct weighted fungal abundance
 * Inner-join weighted ITS and bacteria
