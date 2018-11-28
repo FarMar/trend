@@ -42,3 +42,18 @@ ggplot(meta,aes(AMMI, soil_a_oa)) +
   geom_point() +
   geom_smooth(method = lm)
 
+ggplot(meta,aes(AMMI, litCN)) +
+  geom_point() +
+  geom_smooth(method = lm)
+
+ggplot(meta,aes(AMMI, soilCN)) +
+  geom_point() +
+  geom_smooth(method = lm)
+
+ggplot(meta,aes(AMMI, soilC)) +
+  geom_point() +
+  geom_smooth(method = lm)
+
+ggplot(meta,aes(AMMI, w_doc)) +
+  geom_point() +
+  geom_smooth(method = lm)
